@@ -14,7 +14,7 @@ BankAccount::BankAccount(const std::string &accHolder,const std::string &accNum,
 
 BankAccount::~BankAccount() {
     // cleanup of objects
-    std::cout << "\nBankAccount Object destroyed\n";
+    std::cout << "\nBankAccount Object destroyed";
 }
 
 void BankAccount::deposit(double amount) {
