@@ -14,9 +14,9 @@ protected:
     double m_balance;
 public:
     BankAccount(const std::string &accHolder,const std::string &accNum,double balance);
-    ~BankAccount();
+    virtual ~BankAccount();
     void deposit(double amount);
-    bool withdraw(double amount);
+    virtual bool withdraw(double amount);
     virtual void display();
 };
 
