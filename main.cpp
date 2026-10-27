@@ -1,10 +1,11 @@
 #include <iostream>
 #include "BankAccount.h"
+#include "CheckingAccount.h"
 
 int main() {
     std::cout << "\n----------BankAccount Objects----------\n";
     //static instantiation (compile time)
-    BankAccount customer1("Spangtong", "1987891", -3);
+    BankAccount customer1("Hakari", "7777777", 2103);
     customer1.display();
     customer1.withdraw(500);
     customer1.display();
@@ -15,6 +16,9 @@ int main() {
     delete customer2;
 
     std::cout << "\n----------CheckingAccount Objects----------\n";
+    //static instantiation (compile time)
+    CheckingAccount customer3("Spangtong", "1987891", -200, 300);
+    customer3.display();
 
 
     return 0;
