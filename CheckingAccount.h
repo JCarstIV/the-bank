@@ -18,7 +18,7 @@ public:
     }
     ~CheckingAccount() {
         // cleanup of objects
-        std::cout << "\nCheckingAccount Object deconstructed\n";
+        std::cout << "\nCheckingAccount Object destroyed\n";
     }
     bool withdraw(double amount) { //override base class withdraw method
         if (amount <= m_balance + m_overdraftLimit) {
@@ -30,6 +30,7 @@ public:
         }
         if (m_balance < 0 and amount <= m_overdraftLimit) {
             m_overdraftLimit -= amount;
+            m_balance += amount;
             return true;
         }
         return false;
