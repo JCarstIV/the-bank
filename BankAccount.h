@@ -16,7 +16,7 @@ public:
     BankAccount(const std::string &accHolder,const std::string &accNum,double balance);
     virtual ~BankAccount();
     virtual void deposit(double amount);
-    virtual bool withdraw(double amount);
+    virtual bool withdraw(double amount)=0;
     //if you NEVER use it, and just have it to have other classes inherit it, you could:
     //virtual bool withdraw(double amount)=0;
     //BankAccount would now be an Abstract Class. (an Object that cannot be created [kind of like a placeholder])

@@ -5,13 +5,13 @@
 int main() {
     std::cout << "\n----------BankAccount Objects----------\n";
     //static instantiation (compile time)
-    BankAccount customer1("Kinji Hakari", "7777777", 2103);
+    /*BankAccount customer1("Kinji Hakari", "7777777", 2103);
     customer1.display();
     customer1.withdraw(500);
     customer1.display();
     //dynamic instantiation (run time)
     BankAccount* customer2 = new BankAccount("Princess Daisy", "2005002", 537100);
-    customer2->display();
+    customer2->display();*/
 
     std::cout << "\n----------CheckingAccount Objects----------\n";
     //static instantiation (compile time)
@@ -29,7 +29,7 @@ int main() {
 
 
     std::cout << "\n----------Destruction of Objects----------\n";
-    delete customer2;
+    //delete customer2;
     delete customer4;
     return 0;
 }
