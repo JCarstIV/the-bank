@@ -15,7 +15,7 @@ protected:
 public:
     BankAccount(const std::string &accHolder,const std::string &accNum,double balance);
     virtual ~BankAccount();
-    void deposit(double amount);
+    virtual void deposit(double amount);
     virtual bool withdraw(double amount);
     //if you NEVER use it, and just have it to have other classes inherit it, you could:
     //virtual bool withdraw(double amount)=0;
