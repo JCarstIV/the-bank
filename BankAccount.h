@@ -18,7 +18,7 @@ public:
     void deposit(double amount);
     virtual bool withdraw(double amount);
     //if you NEVER use it, and just have it to have other classes inherit it, you could:
-    //virtual void withdraw(double amount)=0;
+    //virtual bool withdraw(double amount)=0;
     //BankAccount would now be an Abstract Class. (an Object that cannot be created [kind of like a placeholder])
 
     virtual void display();
