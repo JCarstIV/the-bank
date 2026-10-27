@@ -22,7 +22,7 @@ public:
     bool withdraw(double amount) { //override base class withdraw method
         if (amount <= m_balance + m_overdraftLimit) {
             if (amount > m_balance) {
-                m_overdraftLimit += amount;
+                m_overdraftLimit += (m_balance - amount);
             }
             m_balance -= amount;
             return true;
