@@ -26,9 +26,12 @@ public:
             }
             m_balance -= amount;
             return true;
-        } else {
-            return false;
         }
+        if (m_balance < 0 and amount <= m_overdraftLimit) {
+            m_overdraftLimit -= amount;
+            return true;
+        }
+        return false;
     }
     void display() {
         BankAccount::display();
