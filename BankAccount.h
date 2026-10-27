@@ -17,7 +17,7 @@ public:
     ~BankAccount();
     void deposit(double amount);
     bool withdraw(double amount);
-    void display();
+    virtual void display();
 };
 
 
