@@ -28,7 +28,7 @@ int main() {
     customer4->display();
     customer4->withdraw(200);
     customer4->display();
-
+    delete customer4;
     std::cout << "\n----------Destruction of Objects----------\n";
 
     return 0;
